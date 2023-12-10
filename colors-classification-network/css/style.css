@@ -1,0 +1,20 @@
+#title {
+  box-shadow: 2px 2px 5px rgba(76, 74, 74, 0.5);
+}
+
+#title h1 {
+  padding: 4%;
+  font-size: 5rem;
+}
+
+#subtitle {
+  background-color: gainsboro;
+  box-shadow: 2px 2px 5px rgba(129, 125, 125, 0.5);
+}
+
+#subtitle h2 {
+  padding: 4%;
+  font-size: 2.5rem;
+  text-align: center; 
+  margin: 0 auto; 
+}

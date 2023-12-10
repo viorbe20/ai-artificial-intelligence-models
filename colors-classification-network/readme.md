@@ -16,7 +16,7 @@ Actualización en tiempo real: La interfaz se actualiza en tiempo real mientras 
 
 ```bash
 ## Copy code
-git clone https://github.com/TuUsuario/Practica-Red-Neuronal.git
+git clone https://github.com/viorbe20/ai-artificial-intelligence-models.git
 cd Practica-Red-Neuronal
 ```
 

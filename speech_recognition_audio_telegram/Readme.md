@@ -40,4 +40,21 @@ A continuación, se presenta un resumen de lo que hace:
     Pone al bot en un bucle continuo, escuchando y manejando actualizaciones de Telegram.
 
 ### 4. Programa de reconocimiento y transcripción de audio (speech_recognition_audios_telegram.py)
+Este programa en Python utiliza la biblioteca _SpeechRecognition_ para transcribir un archivo de audio en formato WAV. A continuación, se describen los pasos principales:
+
+- Importa la biblioteca _speech_recognition_.
+- Especifica la ruta del archivo de audio en formato WAV.
+- Define una función llamada transcribe_oga que toma la ruta del archivo de audio como parámetro. Dentro de esta función:
+
+Se crea un objeto Recognizer de speech_recognition.
+Se abre el archivo de audio utilizando AudioFile.
+Se graba el audio del archivo.
+Se intenta reconocer el texto utilizando la API de reconocimiento de voz de Google.
+Si hay un error de "Valor Desconocido" (UnknownValueError), devuelve un mensaje indicando que no se pudo reconocer el audio.
+Si hay un error de solicitud (RequestError), devuelve un mensaje que indica el problema en la solicitud.
+Llama a la función transcribe_oga con la ruta del archivo de audio especificada y almacena el resultado en la variable transcription.
+
+Imprime el texto "Transcripción del audio:" seguido de una línea de guiones (-) del mismo tamaño.
+
+Imprime la transcripción del audio.
 (Imagen generada con IA - 21 de enero de 2024. Microsoft Copilot con la tecnología de DALL-E 3)

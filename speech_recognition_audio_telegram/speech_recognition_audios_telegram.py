@@ -1,8 +1,8 @@
 import speech_recognition as sr
 
-audio_file_path = ""
+audio_file_path = "audio/"
 
-def transcribe_oga(audio_file_path):
+def transcribe_file(audio_file_path):
     recognizer = sr.Recognizer()
 
     with sr.AudioFile(audio_file_path) as source:
@@ -18,7 +18,7 @@ def transcribe_oga(audio_file_path):
 
 
 # Call to trasncription function
-transcription = transcribe_oga(audio_file_path)
+transcription = transcribe_file(audio_file_path)
 
 print("Transcripción del audio:")
 print('-' * len("Transcripción del audio:"))
